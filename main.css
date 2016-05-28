@@ -1,8 +1,16 @@
 /* Styles for Product Page Customization */
 /* NOTE: Do not edit the Bootstrap CSS files. */
 
-body {
-    padding-top: 30px;
-    padding-bottom: 20px;
-    color: green;
+div.social{
+  position:fixed;
+  border: 1px solid;
+}
+ul.social-links {
+  position:fixed;
+}
+section#product-description {
+  boarder: 1px solid;
+}
+footer {
+  border: 1px solid;
 }
