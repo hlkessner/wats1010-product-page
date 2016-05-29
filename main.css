@@ -1,16 +1,87 @@
 /* Styles for Product Page Customization */
 /* NOTE: Do not edit the Bootstrap CSS files. */
 
-div.social{
-  position:fixed;
-  border: 1px solid;
+/* social media bar*/
+body {
+  padding-left: 100px; 
+  padding-right: 100px;
+  font-family: 'Marcellus SC', serif;
+  background-color: lightgray;
 }
-ul.social-links {
+.social-links{
   position:fixed;
+  float: right;
+  list-style-type: none;
+  margin-left: 600px; 
+  margin-top: 30px;
+  
+}
+aside.social-links img {
+  height: 70px;
+}
+/* Band Logos */
+img.Substratum {
+  height: 300px;
+  position:block;
+}
+img.Skelator {
+  height: 300px;
+  position: block;
+  margin-left: 220px;
+}
+/* and symbol */
+object {
+  font-size:150px; 
+  padding: 0px;
+  margin: 0px;
+  padding: 30px;
+}
+/* Page Heading */
+h1 {
+  text-align: center;
+  font-size: 70px;
+  font-family: 'UnifrakturMaguntia', cursive;
+}
+h2 {
+  text-align: center;
+  font-size: 50px;
+  font-family: 'UnifrakturMaguntia', cursive;
+}
+h3 {
+  font-size: 40px; 
+}
+h4 {
+  margin-top: 0px;
 }
 section#product-description {
-  boarder: 1px solid;
+  
+}
+/* Track Listing */
+section#tracks {
+  column-count: 2;
+  column-gap: 20px;
+  column-width: 30px;
+  margin-left: 350px; 
+  margin-right: 350px; 
+}
+/* Video */
+section#watch {
+  margin-left: 275px; 
+}
+section#call-to-action {
+  font-size: 40px; 
+  text-align: center;
 }
 footer {
   border: 1px solid;
+}
+.reviews {
+  list-style-type: none;
+  column-width: 225px;
+  column-gap: 100px;
+  margin-left: 50px;
+  
+}
+li {
+  break-inside: avoid; 
 }
