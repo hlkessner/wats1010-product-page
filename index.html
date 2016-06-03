@@ -4,7 +4,9 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- TODO: Add proper head tag to provide a page description for search
+        <meta name="description" content="A product page promoting Battle for the Emerald City">
+        <meta name="keywords" content="Battle for the Emerald City, Substratum, Skelator">
+        <!-- head tag to provide a page description for search
              engines. -->
         <title>Battle for the Emerald City</title>
         <!-- Bootstrap CSS Framework -->
@@ -36,10 +38,13 @@
         <!-- Note: If you do not see a lamp icon in the heading below
              when you view this file in a web browser, then there is an issue
              with how Bootstrap is linked to this page. -->
-        <h1><span class="glyphicon glyphicon-lamp"></span> Battle for the Emerald City</h1>
+        <div id="Header">
+          
+     
+      <h1><span class="glyphicon glyphicon-lamp"></span> Battle for the Emerald City</h1>
        
             <aside class="social-links" id="social">
-            <!-- TODO: Create an area that allows users to Share links to the
+            <!--  an area that allows users to Share links to the
              page. -->
             
             <ul class="social-links">
@@ -48,19 +53,21 @@
                 <li class="instagram"><img src="Img/instagram_black.png"><a href="http://instagram.com"></a></li>
             </ul>
             </aside>
-          
-        <!-- TODO: Populate this page with all the content you deem
-             necessary to create a compelling product page! -->
-            <section id="product-description">
+  
+            
           <h2>A split album by</h2>
               <img class="Skelator" src="design/Skelator_Logo.jpg"><object>&</object><img class="Substratum" src="design/Substratum.jpg"> 
-            <!-- TODO: Create an area to put the long product description. -->
-          
+             
+           </div>
+            <!--  long product description. -->
+          <section id="band-description">
           <h3>Who will win the battle for the Emerald City?</h3>
             <p> Battle for the Emerald city is the upcoming split album by Substratum and Skeletor. These two heavy hitters of the Seattle Heavy Metal                   scene dual for the top spot. Skelator, who have been playing together for 15 years, are the vetrants, but will they been upstaged by the                 newcommers, Substratum? </p>
             </section>
             <!-- TODO: Create an area to show features. -->
+       <div id="album-info">
          
+       
             <h3>Tracks</h3>
             <section id="tracks">
               <h4>Skelator</h4>
@@ -74,16 +81,16 @@
                   <li>Babehammer</li>
                 </ol>
            </section> 
-        <!-- TODO: Create an area to put the explainer video. -->
+        <!--  explainer video. -->
             <section id="watch">
                 <iframe title="Stupeflix Video Player" class="SxPlayer" src="//studio.stupeflix.com/embed/dc9iraKaoHTH/" width="640"                               height="360" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen="true"></iframe>
              
             
             </section>
-        
+        </div> 
 
-        <!-- TODO: Create an area to put customer testimonials. -->
-           <section id="reveiws">
+        <!--  customer testimonials. -->
+           <section id="reviews">
             <h3>Reviews</h3>
               <ul class="reviews">
                 <li>The best album of 2016- Lemmy Kilmister</li><br>
@@ -91,13 +98,25 @@
                 <li>An essential addition to any record collection- Kerrang</li><br>
               </ul>
            </section>
-       <!-- TODO: Create a call to action link to get users to sign up for the
+       <!--  call to action link to get users to sign up for the
              service. -->
           <section id="call-to-action">
             <p>The bands' first joint release will hit shelves worldwide on August 14, 2016 on 7 inch vinyl via Unholy Anarchy Records</p>
-            <p>Preorder the album <u>here</u>!</p>
+            <!-- Paypal Button -->
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+
+
           </section>
-       <!-- TODO: Create an area to show company contact info (phone,
+      
+
+
+       <!-- an area to show company contact info (phone,
              location, etc.) -->
         <footer>
           <section id="contact">

@@ -1,21 +1,52 @@
 /* Styles for Product Page Customization */
 /* NOTE: Do not edit the Bootstrap CSS files. */
 
-/* social media bar*/
+p {
+  font-size: 30px; 
+  margin-bottom: 0px;
+  margin-top: 0px; 
+}
+li {
+  font-size: 20px;
+}
 body {
-  padding-left: 100px; 
-  padding-right: 100px;
   font-family: 'Marcellus SC', serif;
   background-color: lightgray;
+  background-image: url("Img/Leather.jpg");
+  background-repeat: none;
+  padding-left: 100px;
+  padding-right: 100px; 
+  width: 1200px; 
 }
+/* unvisited link */
+a:link {
+    color: gray;
+}
+
+/* visited link */
+a:visited {
+    color: green;
+}
+
+/* mouse over link */
+a:hover {
+    color: limegreen;
+}
+
+/* selected link */
+a:active {
+    color: gray;
+}
+/* Social Side Bar */
 .social-links{
   position:fixed;
   float: right;
   list-style-type: none;
-  margin-left: 600px; 
+  margin-left: 585px; 
   margin-top: 30px;
   
 }
+/* Social Sidebar Images*/
 aside.social-links img {
   height: 70px;
 }
@@ -23,11 +54,13 @@ aside.social-links img {
 img.Substratum {
   height: 300px;
   position:block;
+  border: 5px solid rgba(0, 245, 16, 0.65);
 }
 img.Skelator {
   height: 300px;
   position: block;
-  margin-left: 220px;
+  margin-left: 140px;
+  border: 5px solid rgba(0, 245, 16, 0.65);
 }
 /* and symbol */
 object {
@@ -35,26 +68,39 @@ object {
   padding: 0px;
   margin: 0px;
   padding: 30px;
+  color: rgba(235, 235, 235, 0.95);
 }
-/* Page Heading */
+/* Page Headings */
 h1 {
   text-align: center;
   font-size: 70px;
   font-family: 'UnifrakturMaguntia', cursive;
+  color: rgba(86, 242, 2, 1);
+  margin-top: 40px; 
+
 }
 h2 {
   text-align: center;
   font-size: 50px;
   font-family: 'UnifrakturMaguntia', cursive;
+  color: rgba(86, 242, 2, 1);
 }
 h3 {
   font-size: 40px; 
+  margin-top: 0px;
 }
 h4 {
   margin-top: 0px;
 }
-section#product-description {
-  
+/*content*/
+div#album-info {
+  background-repeat: none;
+  padding-bottom: 40px; 
+  background-color: rgba(255, 255, 255, 0.72);
+}
+div#Header {
+  padding: 30px; 
+ 
 }
 /* Track Listing */
 section#tracks {
@@ -65,16 +111,19 @@ section#tracks {
   margin-right: 350px; 
 }
 /* Video */
+
 section#watch {
   margin-left: 275px; 
+  
 }
-section#call-to-action {
-  font-size: 40px; 
-  text-align: center;
+/* Content section styling */
+section#reviews {
+  background-color: rgba(242, 242, 242, 0.95);
 }
-footer {
-  border: 1px solid;
+section#band-description {
+ background-color: rgba(242, 242, 242, 0.95);
 }
+/* Reviews */
 .reviews {
   list-style-type: none;
   column-width: 225px;
@@ -82,6 +131,27 @@ footer {
   margin-left: 50px;
   
 }
+ul.reviews {
+  margin-bottom: 0px; 
+}
 li {
   break-inside: avoid; 
+}
+/*Call to Action */
+section#call-to-action {
+  font-size: 40px; 
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.72);
+}
+/*Footer*/
+footer {
+  background-color:rgba(166, 166, 166, 0.93);
+  border: 3px solid;
+}
+section#contact {
+  column-count: 2;
+  column-gap: 20px;
+  column-width: 30px;
+  margin-left: 350px; 
+  margin-right: 350px; 
 }
