@@ -5,6 +5,8 @@ p {
   font-size: 30px; 
   margin-bottom: 0px;
   margin-top: 0px; 
+  padding-left: 30px;
+  padding-right: 30px; 
 }
 li {
   font-size: 20px;
@@ -38,12 +40,11 @@ a:active {
     color: gray;
 }
 /* Social Side Bar */
-.social-links{
-  position:fixed;
-  float: right;
+aside#social.social-links{
+  position: center;
+  
   list-style-type: none;
-  margin-left: 585px; 
-  margin-top: 30px;
+ 
   
 }
 /* Social Sidebar Images*/
@@ -75,7 +76,7 @@ h1 {
   text-align: center;
   font-size: 70px;
   font-family: 'UnifrakturMaguntia', cursive;
-  color: rgba(86, 242, 2, 1);
+  color: rgba(126, 226, 44, 1);
   margin-top: 40px; 
 
 }
@@ -83,20 +84,27 @@ h2 {
   text-align: center;
   font-size: 50px;
   font-family: 'UnifrakturMaguntia', cursive;
-  color: rgba(86, 242, 2, 1);
+  color: rgba(126, 226, 44, 1);
 }
 h3 {
   font-size: 40px; 
   margin-top: 0px;
+  margin-bottom: 0px; 
 }
 h4 {
   margin-top: 0px;
+  font-size: 30px;
+  padding: none;
+}
+h5 {
+  margin-top: 0px;
+  font-size: 20px; 
 }
 /*content*/
 div#album-info {
   background-repeat: none;
   padding-bottom: 40px; 
-  background-color: rgba(255, 255, 255, 0.72);
+  background-color: rgba(222, 222, 222, 0.91);
 }
 div#Header {
   padding: 30px; 
@@ -107,8 +115,11 @@ section#tracks {
   column-count: 2;
   column-gap: 20px;
   column-width: 30px;
-  margin-left: 350px; 
-  margin-right: 350px; 
+  margin-left: 300px; 
+  margin-right: 250px; 
+}
+ol.track-names {
+  font-size: 30px; 
 }
 /* Video */
 
@@ -141,13 +152,14 @@ li {
 section#call-to-action {
   font-size: 40px; 
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.72);
+  background-color: rgba(222, 222, 222, 0.91);
 }
 /*Footer*/
 footer {
   background-color:rgba(166, 166, 166, 0.93);
   border: 3px solid;
 }
+/* Contact Info */
 section#contact {
   column-count: 2;
   column-gap: 20px;
